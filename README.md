@@ -12,21 +12,10 @@
     <img src="https://david-dm.org/ethjs/ethjs-rpc/dev-status.svg" alt="devDependency Status" />
   </a>
 
-  <!-- Build Status -->
-  <a href="https://travis-ci.org/ethjs/ethjs-rpc">
-    <img src="https://travis-ci.org/ethjs/ethjs-rpc.svg"
-    alt="Build Status" />
-  </a>
-
   <!-- NPM Version -->
   <a href="https://www.npmjs.org/package/ethjs-rpc">
     <img src="http://img.shields.io/npm/v/ethjs-rpc.svg"
     alt="NPM version" />
-  </a>
-
-  <!-- Test Coverage -->
-  <a href="https://coveralls.io/r/ethjs/ethjs-rpc">
-    <img src="https://coveralls.io/repos/github/ethjs/ethjs-rpc/badge.svg" alt="Test Coverage" />
   </a>
 
   <!-- Javascript Style -->
