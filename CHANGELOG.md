@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [0.3.0-test3]
-### Uncategorized
+### Internal
 - wip ci: use action allowing changelog with dashes in version
 - devDeps: cross-env@1.0.7->7.0.3
 - 0.3.0-test2
