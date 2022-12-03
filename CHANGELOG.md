@@ -7,32 +7,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [0.3.0-test2]
-### Uncategorized
-- .nvm rc v8->v12
-- update changelog
-- bump version to 0.3.0-test1
-- ci: add create-release-pr workflow
-- deprecate nodejs <8.17, npm<6
-- remove coveralls, travis-ci. npm test:coverage replaces test-travis/coveralls
-- devDeps/test: ethereumjs-testrpc->ganache-cli
-- devDeps: remove legacy check-es3-syntax-cli
-- ci: ignore changed dist/*.map files
-- ci: Add Github Actions workflows
-- latest
-- Promise to callback ([#6](https://github.com/legobeat/ethjs-rpc/pull/6))
-- correctly convert promise to callback + fix test to catch unhandled error
-- test - add test for twice called callbacks
-- Update CHANGELOG.md
-- Update package.json
-- only return a promise if no callback provided - otherwise instrument the promise so it doesnt throw unhandled rejections
-- Update package.json
-- Stops swallowing of JSON-RPC error details.
-- added promise support
-- version 0.1.2 -- louder errors
-- version 0.1.1 -- better error handling
-- package json
-- version 0.1.0 -- docs, tests, the rest
-
 ### Changed
 - Renamed to `@metamask/ethjs-rpc`
 - Fixed and removed broken devDependencies
@@ -42,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CI migrated from Travis to Github Actions
 - `npm test-travis` is now `npm test:coverage`
 - Removed coveralls
+- .nvm rc v8->v12
 
 ## [0.2.0]
 ### Changed
@@ -60,7 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - package json fix
 
-## [0.1.4]
+## [0.1.3]
 ### Changed
 - Handle 405 errors better from the provider
 
@@ -87,8 +62,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [0.2.0]: https://github.com/legobeat/ethjs-rpc/compare/v0.1.7...v0.2.0
 [0.1.7]: https://github.com/legobeat/ethjs-rpc/compare/v0.1.6...v0.1.7
 [0.1.6]: https://github.com/legobeat/ethjs-rpc/compare/v0.1.5...v0.1.6
-[0.1.5]: https://github.com/legobeat/ethjs-rpc/compare/v0.1.4...v0.1.5
-[0.1.4]: https://github.com/legobeat/ethjs-rpc/compare/v0.1.2...v0.1.4
+[0.1.5]: https://github.com/legobeat/ethjs-rpc/compare/v0.1.3...v0.1.5
+[0.1.3]: https://github.com/legobeat/ethjs-rpc/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/legobeat/ethjs-rpc/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/legobeat/ethjs-rpc/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/legobeat/ethjs-rpc/releases/tag/v0.1.0
