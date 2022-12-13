@@ -33,7 +33,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version-file: '.nvmrc'
-      - uses: MetaMask/action-create-release-pr@68dcf44f12fefd4973e594ca1b80fb816f8322c6
+      - uses: MetaMask/action-create-release-pr@2d124c5b0bf1fb10111589cd95b6b22734ac66d3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
