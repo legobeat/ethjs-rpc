@@ -6,6 +6,43 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0-test7]
+### Uncategorized
+- 0.3.0-test6
+- fixup package-lock.json
+- fixup custom gh action
+- 0.3.0-test5
+- changelog
+- 0.3.0-test4
+- 0.3.0-test3
+- fixup changelog
+- wip ci: use action allowing changelog with dashes in version
+- devDeps: cross-env@1.0.7->7.0.3
+- 0.3.0-test2
+- .nvm rc v8->v12
+- update changelog
+- bump version to 0.3.0-test1
+- ci: add create-release-pr workflow
+- deprecate nodejs <8.17, npm<6
+- remove coveralls, travis-ci. npm test:coverage replaces test-travis/coveralls
+- devDeps/test: ethereumjs-testrpc->ganache-cli
+- devDeps: remove legacy check-es3-syntax-cli
+- ci: ignore changed dist/*.map files
+- ci: Add Github Actions workflows
+- latest
+- correctly convert promise to callback + fix test to catch unhandled error
+- test - add test for twice called callbacks
+- Update CHANGELOG.md
+- Update package.json
+- only return a promise if no callback provided - otherwise instrument the promise so it doesnt throw unhandled rejections
+- Update package.json
+- Stops swallowing of JSON-RPC error details.
+- added promise support
+- version 0.1.2 -- louder errors
+- version 0.1.1 -- better error handling
+- package json
+- version 0.1.0 -- docs, tests, the rest
+
 ## [0.3.0-test6]
 ### Uncategorized
 - fixup package-lock.json
@@ -137,7 +174,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - linting
   - basic exports
 
-[Unreleased]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-test6...HEAD
+[Unreleased]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-test7...HEAD
+[0.3.0-test7]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-test6...v0.3.0-test7
 [0.3.0-test6]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-test5...v0.3.0-test6
 [0.3.0-test5]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-test4...v0.3.0-test5
 [0.3.0-test4]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-test3...v0.3.0-test4
