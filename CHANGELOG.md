@@ -5,12 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.3.0]
 ### Changed
 - Renamed to `@metamask/ethjs-rpc`
 - Fixed and removed broken devDependencies
 - Require minimum nodejs v8.17, npm v6
 - Repository location changed
-## Internal
 - CI migrated from Travis to Github Actions
 - `npm test-travis` is now `npm test:coverage`
 - Removed coveralls
@@ -54,7 +55,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - linting
   - basic exports
 
-[Unreleased]: https://github.com/MetaMask/ethjs-rpc/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/MetaMask/ethjs-rpc/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/MetaMask/ethjs-rpc/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/MetaMask/ethjs-rpc/compare/v0.1.7...v0.2.0
 [0.1.7]: https://github.com/MetaMask/ethjs-rpc/compare/v0.1.6...v0.1.7
 [0.1.6]: https://github.com/MetaMask/ethjs-rpc/compare/v0.1.5...v0.1.6
