@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0-teste]
+### Changed
+- ci: action-npm-publish@v2->v1.1.0
+- update dist
+- fixup changelog
+
 ## [0.3.0-testd]
 ### Changed
 - add publishConfig to package.json
@@ -104,7 +110,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - linting
   - basic exports
 
-[Unreleased]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-testd...HEAD
+[Unreleased]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-teste...HEAD
+[0.3.0-teste]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-testd...v0.3.0-teste
 [0.3.0-testd]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-testc...v0.3.0-testd
 [0.3.0-testc]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-testb...v0.3.0-testc
 [0.3.0-testb]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-testa...v0.3.0-testb
