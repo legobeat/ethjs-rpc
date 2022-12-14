@@ -1,5 +1,5 @@
 {
-  "name": "ethjs-rpc",
+  "name": "@ethjs-staging/ethjs-rpc",
   "version": "0.3.0-testb",
   "description": "A super simple module for querying the Ethereum RPC layer without formatting.",
   "main": "lib/index.js",
