@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version-file: '.nvmrc'
-      - uses: MetaMask/action-publish-release@v2
+      - uses: legobeat/action-publish-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Install and build
@@ -28,11 +28,11 @@ jobs:
           npm run build
       - name: Dry Run Publish
         # omit npm-token token to perform dry run publish
-        uses: MetaMask/action-npm-publish@v2
+        uses: MetaMask/action-npm-publish@v1.1.0
         env:
           SKIP_PREPACK: true
       - name: Publish
-        uses: MetaMask/action-npm-publish@v2
+        uses: MetaMask/action-npm-publish@v1.1.0
         with:
           # This `NPM_TOKEN` needs to be manually set per-repository.
           # Look in the repository settings under "Environments", and set this token in the `npm-publish` environment.
