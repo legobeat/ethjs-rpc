@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0-testd]
+### Uncategorized
+- add publishConfig to package.json
+
 ## [0.3.0-testc]
 ### Changed
 - move package to @ethjs-staging namespace
@@ -100,7 +104,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - linting
   - basic exports
 
-[Unreleased]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-testc...HEAD
+[Unreleased]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-testd...HEAD
+[0.3.0-testd]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-testc...v0.3.0-testd
 [0.3.0-testc]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-testb...v0.3.0-testc
 [0.3.0-testb]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-testa...v0.3.0-testb
 [0.3.0-testa]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-test9...v0.3.0-testa
