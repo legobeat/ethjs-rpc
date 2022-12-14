@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version-file: '.nvmrc'
-      - uses: MetaMask/action-publish-release@v2
+      - uses: MetaMask/action-publish-release@bc0d19824e88e009af68413d7fd01278f79436b8
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Install and build
