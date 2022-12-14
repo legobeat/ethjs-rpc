@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0-testb]
+### Changed
+- wip: ci: use forked action-npm-publish action
+
 ## [0.3.0-testa]
 ### Changed
 - 0.3.0-testa
@@ -92,7 +96,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - linting
   - basic exports
 
-[Unreleased]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-testa...HEAD
+[Unreleased]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-testb...HEAD
+[0.3.0-testb]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-testa...v0.3.0-testb
 [0.3.0-testa]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-test9...v0.3.0-testa
 [0.3.0-test9]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-test8...v0.3.0-test9
 [0.3.0-test8]: https://github.com/legobeat/ethjs-rpc/compare/v0.3.0-test7...v0.3.0-test8
