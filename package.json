@@ -46,9 +46,9 @@
   "author": "Nick Dodson <nick.dodson@consensys.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ethjs/ethjs-rpc/issues"
+    "url": "https://github.com/MetaMask/ethjs-rpc/issues"
   },
-  "homepage": "https://github.com/ethjs/ethjs-rpc#readme",
+  "homepage": "https://github.com/MetaMask/ethjs-rpc#readme",
   "babel": {
     "plugins": [
       [
