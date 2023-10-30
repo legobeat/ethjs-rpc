@@ -11,7 +11,7 @@ npm install --save ethjs-rpc
 ## Install from Source
 
 ```
-git clone http://github.com/ethjs/ethjs-rpc
+git clone http://github.com/MetaMask/ethjs-rpc
 npm install
 ```
 
