@@ -12,9 +12,9 @@
   "scripts": {
     "start": "npm test",
     "release": "npmpub",
-    "pretest": "npm run lint",
-    "prepublish": "npm run build",
     "prebuild": "npm run build:clean && npm run test",
+    "prepare": "npm run build",
+    "pretest": "npm run lint",
     "build:clean": "npm run test:clean && rimraf ./dist",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --copy-files",
     "build:umd": "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack --config ./internals/webpack/webpack.config.js ./lib/index.js --progress",
