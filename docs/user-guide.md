@@ -11,7 +11,7 @@ npm install --save ethjs-rpc
 ## Usage
 
 ```js
-const HttpProvider = require('ethjs-provider-http');
+const HttpProvider = require('@metamask/ethjs-provider-http');
 const EthRPC = require('ethjs-rpc');
 const eth = new EthRPC(new HttpProvider('http://localhost:8545'));
 
