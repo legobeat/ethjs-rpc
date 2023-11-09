@@ -155,7 +155,7 @@
     "ganache-cli": "6.12.2",
     "istanbul": "0.4.5",
     "json-loader": "^0.5.7",
-    "mocha": "^5.1.1",
+    "mocha": "^7.1.2",
     "pre-commit": "^1.2.2",
     "rimraf": "^3.0.2",
     "webpack": "^3.12.0"
