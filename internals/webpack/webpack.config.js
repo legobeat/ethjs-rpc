@@ -14,7 +14,7 @@ var config = {                    // eslint-disable-line
       },
       {
         test: /\.json$/,
-        loader: 'json-loader',
+        loaders: ['json-loader'],
       },
     ],
   },
@@ -27,7 +27,7 @@ var config = {                    // eslint-disable-line
     umdNamedDefine: true,
   },
   plugins: [
-    new webpack.BannerPlugin({ banner: ' /* eslint-disable */ ', raw: true, entryOnly: true }),
+    new webpack.BannerPlugin({ banner: '/* eslint-disable */', raw: true, entryOnly: true }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(env),
