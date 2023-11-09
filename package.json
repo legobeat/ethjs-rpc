@@ -144,7 +144,7 @@
     "@metamask/ethjs-provider-http": "^0.2.0",
     "babel-loader": "^8.0.0",
     "bignumber.js": "^9.1.2",
-    "chai": "3.5.0",
+    "chai": "^4.3.10",
     "cross-env": "6.0.3",
     "eslint": "2.10.1",
     "eslint-config-airbnb": "9.0.1",
