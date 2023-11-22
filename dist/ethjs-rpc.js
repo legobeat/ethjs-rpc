@@ -109,7 +109,6 @@ module.exports = g;
 
 
 var promiseToCallback = __webpack_require__(2);
-
 module.exports = EthRPC;
 
 /**
@@ -123,11 +122,9 @@ module.exports = EthRPC;
 function EthRPC(cprovider, options) {
   var self = this;
   var optionsObject = options || {};
-
   if (!(this instanceof EthRPC)) {
     throw new Error('[ethjs-rpc] the EthRPC object requires the "new" flag in order to function normally (i.e. `const eth = new EthRPC(provider);`).');
   }
-
   self.options = Object.assign({
     jsonSpace: optionsObject.jsonSpace || 0,
     max: optionsObject.max || 9999999999999
@@ -135,9 +132,8 @@ function EthRPC(cprovider, options) {
   self.idCounter = Math.floor(Math.random() * self.options.max);
   self.setProvider = function (provider) {
     if (typeof provider !== 'object') {
-      throw new Error('[ethjs-rpc] the EthRPC object requires that the first input \'provider\' must be an object, got \'' + typeof provider + '\' (i.e. \'const eth = new EthRPC(provider);\')');
+      throw new Error("[ethjs-rpc] the EthRPC object requires that the first input 'provider' must be an object, got '" + typeof provider + "' (i.e. 'const eth = new EthRPC(provider);')");
     }
-
     self.currentProvider = provider;
   };
   self.setProvider(cprovider);
@@ -155,24 +151,20 @@ EthRPC.prototype.sendAsync = function sendAsync(payload, callback) {
   var self = this;
   self.idCounter = self.idCounter % self.options.max;
   var parsedPayload = createPayload(payload, self.idCounter++);
-
   var promise = new Promise(function (resolve, reject) {
     self.currentProvider.sendAsync(parsedPayload, function (err, response) {
       var responseObject = response || {};
-
       if (err || responseObject.error) {
-        var payloadErrorMessage = '[ethjs-rpc] ' + (responseObject.error && 'rpc' || '') + ' error with payload ' + JSON.stringify(parsedPayload, null, self.options.jsonSpace) + ' ' + (err ? String(err) : JSON.stringify(responseObject.error, null, self.options.jsonSpace));
+        var payloadErrorMessage = "[ethjs-rpc] " + (responseObject.error && 'rpc' || '') + " error with payload " + JSON.stringify(parsedPayload, null, self.options.jsonSpace) + " " + (err ? String(err) : JSON.stringify(responseObject.error, null, self.options.jsonSpace));
         var payloadError = new Error(payloadErrorMessage);
         payloadError.value = err || responseObject.error;
         reject(payloadError);
         return;
       }
-
       resolve(responseObject.result);
       return;
     });
   });
-
   if (callback) {
     // connect promise resolve handlers to callback
     return promiseToCallback(promise)(callback);
