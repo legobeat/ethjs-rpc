@@ -1,8 +1,7 @@
-const { assert } = require('chai');
-const TestRPC = require('ganache-cli');
-const HTTPProvider = require('@metamask/ethjs-provider-http');
 const EthRPC = require('../index.js');
-
+const assert = require('chai').assert;
+const TestRPC = require('ganache-cli');
+const HTTPProvider = require('ethjs-provider-http');
 const provider = TestRPC.provider({});
 const provider2 = TestRPC.provider({});
 
@@ -33,10 +32,10 @@ describe('ethjs-rpc', () => {
           assert.notDeepEqual(accounts1, accounts2);
 
           eth.sendAsync({ method: 'eth_accounts' })
-            .then((accounts3) => {
-              assert.deepEqual(accounts3, accounts2);
-              done();
-            })
+          .then((accounts3) => {
+            assert.deepEqual(accounts3, accounts2);
+            done();
+          })
           .catch((error) => console.log(error)); // eslint-disable-line
         });
       });
@@ -59,11 +58,9 @@ describe('ethjs-rpc', () => {
     });
 
     it('should handle invalid response', (done) => {
-      const eth = new EthRPC({
-        sendAsync: (payload, cb) => {
-          cb(null, { error: 'Some Error!!' });
-        },
-      });
+      const eth = new EthRPC({ sendAsync: (payload, cb) => {
+        cb(null, { error: 'Some Error!!' });
+      } });
       eth.sendAsync({ method: 'eth_accounts' }, (err, accounts1) => {
         assert.equal(typeof err, 'object');
         assert.equal(accounts1, null);
@@ -92,11 +89,9 @@ describe('ethjs-rpc', () => {
     });
 
     it('should handle invalid errors', (done) => {
-      const eth = new EthRPC({
-        sendAsync: (payload, cb) => {
-          cb('Some error!');
-        },
-      });
+      const eth = new EthRPC({ sendAsync: (payload, cb) => {
+        cb('Some error!');
+      } });
       eth.sendAsync({ method: 'eth_accounts' }, (err, accounts1) => {
         assert.equal(typeof err, 'object');
         assert.equal(accounts1, null);

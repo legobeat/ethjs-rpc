@@ -55,6 +55,7 @@ EthRPC.prototype.sendAsync = function sendAsync(payload, callback) {
       }
 
       resolve(responseObject.result);
+      return;
     });
   });
 

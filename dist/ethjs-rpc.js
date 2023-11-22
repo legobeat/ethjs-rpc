@@ -1,4 +1,4 @@
-/* eslint-disable */
+ /* eslint-disable */ 
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -162,6 +162,7 @@ EthRPC.prototype.sendAsync = function sendAsync(payload, callback) {
         return;
       }
       resolve(responseObject.result);
+      return;
     });
   });
   if (callback) {
