@@ -23,6 +23,7 @@
     "lint": "npm run lint:js",
     "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern **/**.min.js",
     "lint:js": "npm run lint:eslint -- . ",
+    "lint:staged": "lint-staged",
     "test:clean": "rimraf ./coverage",
     "test": "mocha ./src/tests/**/*.js -R spec --timeout 2000000",
     "test:coverage": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- src/tests/**/*.js -R spec --timeout 2000000",
@@ -141,24 +142,30 @@
     "@babel/plugin-transform-property-literals": "^7.0.0",
     "@babel/plugin-transform-object-rest-spread": "^7.0.0",
     "@babel/register": "^7.0.0",
-    "@metamask/ethjs-provider-http": "^0.2.0",
     "babel-loader": "^8.0.0",
-    "bignumber.js": "^9.1.2",
-    "chai": "^4.3.10",
-    "cross-env": "^6.0.3",
-    "eslint": "^5.4.0",
-    "eslint-config-airbnb": "^17.1.1",
-    "eslint-import-resolver-webpack": "^0.2.4",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.2",
+    "bignumber.js": "3.0.1",
+    "chai": "3.5.0",
+    "cross-env": "6.0.3",
+    "eslint": "2.10.1",
+    "eslint-config-airbnb": "9.0.1",
+    "eslint-import-resolver-webpack": "0.2.4",
+    "eslint-plugin-import": "1.8.0",
+    "eslint-plugin-jsx-a11y": "1.2.0",
+    "eslint-plugin-react": "5.1.1",
+    "ethjs-abi": "0.0.1",
+    "ethjs-format": "0.1.8",
+    "ethjs-provider-http": "*",
     "ganache-cli": "6.12.2",
     "istanbul": "0.4.5",
     "json-loader": "^0.5.7",
-    "mocha": "^7.1.2",
-    "pre-commit": "^1.2.2",
-    "rimraf": "^3.0.2",
+    "lint-staged": "1.0.1",
+    "mocha": "^5.1.1",
+    "pre-commit": "1.1.3",
+    "rimraf": "2.3.4",
     "webpack": "^3.12.0"
+  },
+  "lint-staged": {
+    "lint:eslint": "*.js"
   },
   "eslintConfig": {
     "parser": "@babel/eslint-parser",
@@ -168,17 +175,6 @@
       "mocha": true,
       "es6": true
     },
-    "overrides": [
-      {
-        "files": [
-          "src/tests/**.js"
-        ],
-        "rules": {
-          "import/extensions": 0,
-          "import/no-extraneous-dependencies": 0
-        }
-      }
-    ],
     "parserOptions": {
       "ecmaVersion": 6,
       "requireConfigFile": false,
@@ -197,9 +193,6 @@
           "SwitchCase": 1
         }
       ],
-      "operator-assignment": 0,
-      "no-plusplus": 0,
-      "no-mixed-operators": 0,
       "no-console": 1,
       "max-len": 0,
       "prefer-template": 2,
