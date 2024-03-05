@@ -141,7 +141,7 @@
     "@babel/plugin-transform-property-literals": "^7.0.0",
     "@babel/plugin-transform-object-rest-spread": "^7.0.0",
     "@babel/register": "^7.0.0",
-    "@metamask/ethjs-provider-http": "^0.2.0",
+    "@metamask/ethjs-provider-http": "^0.3.0",
     "babel-loader": "^8.0.0",
     "bignumber.js": "^9.1.2",
     "chai": "^4.4.1",
