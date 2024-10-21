@@ -6,6 +6,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0]
+### Changed
+- **BREAKING**: `@babel/runtime@^7.0.0` is now a peerDependency ([#34](https://github.com/MetaMask/ethjs-rpc/pull/34))
+- Update babel from `6.18.2` to `7.2` ([#34](https://github.com/MetaMask/ethjs-rpc/pull/34))
+  - This change was previously prematurely released in `0.3.1` and reverted in `0.3.2`, in order to keep latest `0.3.x` non-breaking.
+
+## [0.3.2]
+### Fixed
+- Downgrade babel from 7.2 to 6.18.2 ([#28](https://github.com/MetaMask/ethjs-rpc/pull/28))
+  - The upgrade of babel in `0.3.1` was actually breaking. It's downgraded again and will be re-released in `0.4.0`.
+
+## [0.3.1]
+### Changed
+- Update babel from 6.18.2 to 7.2 ([#24](https://github.com/MetaMask/ethjs-rpc/pull/24))
+- Update webpack from v2.1.0-beta.15 to 3.12.0 ([#23](https://github.com/MetaMask/ethjs-rpc/pull/23))
+
 ## [0.3.0]
 ### Changed
 - Renamed to `@metamask/ethjs-rpc`
@@ -55,7 +71,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - linting
   - basic exports
 
-[Unreleased]: https://github.com/MetaMask/ethjs-rpc/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/MetaMask/ethjs-rpc/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/MetaMask/ethjs-rpc/compare/v0.3.2...v0.4.0
+[0.3.2]: https://github.com/MetaMask/ethjs-rpc/compare/v0.3.1...v0.3.2
+[0.3.1]: https://github.com/MetaMask/ethjs-rpc/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/MetaMask/ethjs-rpc/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/MetaMask/ethjs-rpc/compare/v0.1.7...v0.2.0
 [0.1.7]: https://github.com/MetaMask/ethjs-rpc/compare/v0.1.6...v0.1.7
