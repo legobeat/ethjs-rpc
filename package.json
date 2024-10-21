@@ -39,7 +39,7 @@
     "web3"
   ],
   "engines": {
-    "npm": ">=6",
+    "npm": ">=7",
     "node": "^10.19 || ^12.22 || ^16.20 || ^18.18 || >=20"
   },
   "author": "Nick Dodson <nick.dodson@consensys.net>",
